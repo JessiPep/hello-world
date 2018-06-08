@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+
+/*Fonts ------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/*Global Styles ------------------------------------------------------------------------------------------------------------*/
+
+body {
+    padding-top: 3.125em;
+    font-family: "Karla", "sans-serif";
+    font-weight: 300;
+    color: #707070;
+    font-size: 1.2em;
+    overflow-x: hidden;
+    position: relative;
+}
+
+h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 3em;
+    padding: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-size: 2em;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+.page p {
+    font-size: 1.4em;
+}
+
+/** Links **/
+
+p a {
+    color: rgba(186,67,67,1);
+}
+
+/** Image formatting **/
+
+
+img.pepper {
+    max-width: 200px;
+    /*box-shadow: 1em 1em 1em;*/
+}
+
+.venuepicture img{
+    max-width: 25%; 
+    border-radius: 15%;
+}
+
+img.thewedding {
+    max-height: 300px; 
+    border-radius: 3%;
+}
+
+/* Responsive */
+img {
+    max-width: 100%;
+}
+
+img.singlerose {
+    max-width: 15em;
+    margin-top: 5em;
+}
+
+
+
+/*Header ----------------------------------------------------------------------------------------------------*/
+
+/*Navigation*/
+
+header .navbar-default .navbar-toggle {
+     color: rgb(151,123,74);
+}
+
+header .navbar {
+    padding-right: 0;
+}
+
+.navbar-collapse {
+    overflow: hidden;
+}
+
+header .navbar-default {
+    background-color: rgba(151,123,74,.8);
+    border: none;
+}
+
+header .navbar-default .navbar-nav a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+header .navbar-default .navbar-nav a:hover {
+    color: rgb(186, 67, 67);
+}
+
+header .navbar-default .navbar-nav .active a {
+    background: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background: none;
+    border-bottom: .25em solid rgb(186, 67, 67);
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a {
+    font-weight: 900;
+    background: transparent;
+    border-bottom: .25em solid rgb(186, 67, 67);
+    text-shadow: none;
+}
+
+/* Navbar Toggle/Hamburger button **/
+
+header .navbar-toggle {
+    background-color: white;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(151,123,74);
+}
+
+header .navbar-default .navbar-toggle:hover {
+    background-color: rgba(186,67,67,.5);
+}
+
+/* .Page Region Styles --------------------------------------------------------------------------------------*/
+
+/*Hero*/
+
+#hero {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url("../_images/rosebunch.PNG");
+    background-size: contain;
+}
+
+.tagOne {
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: .625em;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: .05em .05em white;
+    margin-top: 2em;
+}
+
+.us {
+    font-size: 7.5em;
+    color: white;
+    text-align: center;
+    text-shadow: .03em .03em #977b4a;
+}
+
+.tagTwo {
+    font-size: 1.2em;
+    text-align: left;
+    position: relative;
+    z-index: 5;
+    font-weight: 700;
+    color: black;
+    letter-spacing: .5em;
+    line-height: 2em;
+}
+
+.tagThree {
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: 700;
+    color: black;
+    letter-spacing: .5em;
+    line-height: 2em;
+}
+
+.scroll_indicator p {
+    background-image: url(../_images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    color: #977b4a;
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: .03em .03em black;
+}
+
+/* #thecouple */
+
+#thecouple {
+    padding: 5em;
+    line-height: 200%;
+}
+
+/* #theproposal */
+
+#theproposal {
+    background-attachment: fixed;
+    background-image: url(../_images/hike.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    color: black;
+    line-height: 200%;
+    padding: 5em;
+    text-align: justify;    
+}
+
+#theproposal p {
+    background-color: rgba(255,255,255,.5);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+/* #thewedding */
+
+#thewedding {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    padding: 50px;
+    background-color: rgba(252,210,40,.7);
+    border-radius: .5em;
+}
+
+.text {
+    padding: 5em;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 200%;
+}
+
+.wedpic {
+    align-content: center;
+    padding: 3em;
+}
+
+/* #thesoiree */
+
+#thesoiree {
+    padding: 50px;
+}
+
+#thesoiree {
+    padding: 50px;
+}
+
+.subsoiree {
+    padding: 3em;
+}
+
+/* #travel */
+
+#travel {
+    padding: 50px;    
+}
+
+/* #theregistry */
+
+#theregistry {
+    padding:50px;
+    text-align: center;
+}
+
+#theregistry p{
+    text-align: center;
+}
+
+/*Footer Formatting ---------------------------------------------------------------------------------------------*/
+
+footer .navbar-default {
+    text-align: right;
+    color: rgba(151,123,74,.8);
+    background-color: transparent;
+    font-family: "Dancing Script", "sans-serif";
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-right: .5em;
+    padding-top: 1em;
+    border: none;
+}
+
+/*Media Queries ------------------------------------------------------------------------------------------------**/
+
+/*Navbar */
+
+
+@media (max-width: 1000px) { 
+    ul{ 
+        width: 900px; /* clear navbar on medium screen/browser sizes **/
+    } 
+    li{ 
+        font-size: 1.5em;
+        color: rgb(0,0,0);
+    }
+    
+    .navbar-header { /* Clears navbar at 1200px width */
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    
+} /*end of first media query for navbar */
+
+/*Mobile Styles --------- */
+
+@media only screen and (max-width: 30em) {
+    
+    body {
+        font-size: .9em;
+    }
+    
+    h2 {
+        font-size: 2em;
+        padding: 0;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    #hero {
+        color: black;
+        background: url("../_images/rosebunchmobile.png");   /* must use background not background-image for ios devices */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+    }
+    
+    .tagOne {
+        color: black;
+        font-size: 1.2em;
+        font-weight: 900;
+        letter-spacing: .625em;
+        margin-top: 1em;
+        text-align: center;
+        text-shadow: .03em .03em white;
+        text-transform: uppercase;
+    }
+
+    .us {
+        color: white;
+        font-size: 4em;
+        padding-top: 3em;
+        text-align: center;
+        text-shadow: .03em .03em #977b4a;
+    }
+
+    .tagTwo {
+        font-size: .6em;
+        font-weight: 900;
+        letter-spacing: .5em;
+        line-height: 2em;
+        position: relative;        
+        text-align: left;
+        
+    }
+
+    .tagThree {
+        font-size: .6em;
+        font-weight: 900;
+        letter-spacing: .5em;
+        line-height: 2em;
+        text-align: right;
+    }
+    
+    #thecouple {
+        line-height: 200%;
+        padding: 0;
+        text-align: justify;
+    }
+    
+    #theproposal {
+        padding: 1em;
+    }
+
+    #theproposal p {
+        background-color: rgba(255,255,255,.5);
+        border-radius: 1em;
+        margin: 1em;
+    }
+    
+    #thewedding {
+        background-color: rgba(252,210,40,.7);
+        border-radius: .5em;
+        margin: 0;
+        margin-top: 5em;
+        padding: 1em;    
+    }
+
+    /* Within thewedding div **/
+    .text {
+        background-color: white;
+        border-radius: 5px;
+        line-height: 200%;
+        padding: 5px;
+    }
+
+    .wedpic {
+        align-content: center;
+    }
+    
+    #thesoiree {
+        margin-top: 5em;
+        padding: 0;
+    }
+    
+    #travel {
+        margin-top: 5em;
+        padding: 0px; 
+        text-align: left;
+    }
+    
+    .subsoiree {
+        padding: 3em;
+    }
+    
+    #theregistry {
+        margin-top: 5em;
+        padding:0;
+        padding-bottom:20em; 
+        text-align: center;
+    }
+    
+    img.singlerose {
+    max-width: 8em;
+    margin-top: 5em;
+}
+
+}/* end of mobile settings */

@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+
+/*Fonts ------------------------------------------------------------------------------------------------------------------*/
+<style>
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+</style>
+
+/*Global Styles ------------------------------------------------------------------------------------------------------------*/
+
+body {
+    color: #707070;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 1.2em;
+    font-weight: 300;
+    overflow-x: hidden;
+    padding-top: 3em;
+    position: relative;
+}
+
+h2 {
+    color: black;
+    font-size: 4.5em;
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: black;
+    font-size: 1em;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+.page p {
+    font-size: 1.4em;
+    padding-bottom: 4em;
+}
+
+/** Links **/
+
+p a {
+    color: #527a7a;
+    font-weight: 700;
+}
+
+/** Image formatting **/
+
+/* Responsive */
+img {
+    max-width: 100%;
+}
+
+.page {
+    padding: 1em;
+}
+
+
+
+/*Header ----------------------------------------------------------------------------------------------------*/
+
+/*Navigation*/
+
+header .navbar-default .navbar-toggle {
+     color: rgb(255,255,255);
+}
+
+header .navbar {
+    background: transparent;
+    border: none;
+    padding-right: 1em;
+}
+
+.navbar-collapse {
+    overflow: hidden;
+}
+
+header .navbar-default .navbar-nav a {
+    color: black;
+    font: "Oswald"
+    font-size: 1.2em;
+    background-color: transparent;
+}
+
+header .navbar-default .navbar-nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    background-color: none;
+    border-bottom: .25em solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a {
+    background: none;
+    border-bottom: .25em solid rgb(255, 255, 255);
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+}
+/* Navbar Toggle/Hamburger button **/
+
+header .navbar-toggle {
+    background-color: white;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(0,0,0);
+}
+
+header .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #527a7a !important;
+    transition: background-color 500ms linear;
+}
+
+/* .Page Region Styles --------------------------------------------------------------------------------------*/
+
+/*Hero*/
+
+.bgimage {
+    width:100%;
+    height:500px;
+    background: url("../_images/home.jpg") center center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.bgimage h5 {
+    color:white;
+    text-shadow:2px 2px #333;
+}
+
+#logo {
+    width: 25%;
+    padding: 1em;
+}
+
+/* #aboutus */
+
+#aboutus h2{
+    font-weight: 600;
+    font-size: 3em;
+}
+#aboutus p{
+    line-height: 200%;
+    font-size: 1em;
+}
+#intro {
+    font-size: 1.5em;
+}
+
+/* #services */
+
+#services h2 {
+    background-image: url("../_images/CleanedHouse.JPG");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    color: white;
+    font-size: 3em;
+    line-height: 500%;
+    padding: 1em;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+#services p {
+    font-size: 1em;
+    padding: 2em;
+    text-align: center;
+}
+
+#opinion h2 {
+    background-image: url("../_images/bedroom.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 500%;  
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+#contact h2{
+    background-image: url("../_images/bathtub.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 500%;
+    text-shadow: 2px 2px #000000;
+}
+
+#contact p{
+    font-size: 2em;
+    padding: 1em;
+    padding-bottom: 8em;
+    text-align: center;
+}
+
+#phone {
+    padding: 1em;
+    text-shadow: #ffff66 .25em;
+}
+
+/*Footer Formatting ---------------------------------------------------------------------------------------------*/
+
+footer .navbar-default {
+    text-align: right;
+    color: rgba(0,0,0,.8);
+    background-color: transparent;
+    font-family: "Oswald", "sans-serif";
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-right: .5em;
+    padding-top: 1em;
+    border: none;
+    margin: 0;
+}
+
+/*Media Queries -----------------------------------------------------------------------------------------**/
+
+/*Navbar */
+
+@media (max-width: 1000px) { 
+    ul{ 
+        width: 900px; /* clear navbar on medium screen/browser sizes **/
+    } 
+    li{ 
+        font-size: 1.5em;
+        color: rgb(0,0,0);
+    }
+    
+    #logo {
+        width: 50%;
+        padding: 1em;
+    }
+    
+    .navbar-header { /* Clears navbar at 1200px width */
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    
+} /*end of first media query for navbar */
+
+
+/*Mobile Styles ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 30em) {
+    
+    
+    /* Navbar ----------- */
+    
+    header .navbar-default .navbar-nav a {
+        color: black;
+        font: "Oswald"
+        font-size: 1.2em;
+        background-color: white;
+    }
+    
+    header .navbar-default .navbar-nav a:hover {
+        background-color: black;
+        color: white;   
+    }
+    
+    header .navbar-default .navbar-nav .active a:hover {
+        background-color: none;
+        border-bottom: .25em solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        text-shadow: none;
+    }
+    
+    header .navbar-default .navbar-nav .active a {
+        background: white;
+        border-bottom: .25em solid rgb(0, 0, 0);
+        font-weight: 900;
+        text-shadow: none;
+    }
+
+    .navbar-toggle {
+        margin-right: 1px;
+    }
+    
+    /* Main body --------*/
+    
+    body {
+        font-size: .9em;
+        overflow-x: hidden; 
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    #logo {
+        width: 75%;
+        padding: 1em;
+    }
+    
+    .bgimage {
+      background: url("../_images/home_mobile.jpg") center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: scroll;
+      height:500px;
+      width:100%;
+    }
+    
+    #aboutus p {
+        border: none;
+        font-size: 1.5em;
+        line-height: 200%;
+        margin: none;
+        padding: 0;
+        text-align: justify;
+    }
+    
+    #services h2 {
+    background-image: url("../_images/CleanedHouse.JPG");
+    background-attachment: scroll;
+        
+    }
+    
+    #services p {
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    #opinion h2 {
+    background-image: url("../_images/bedroom.jpg");
+    background-attachment: scroll;
+
+    }
+
+#contact h2{
+    background-image: url("../_images/bathtub.jpg");
+    background-attachment: scroll;
+    }
+    
+    #opinion p {
+        background-color: rgba(255,255,255,.5);
+        border-radius: 1em;
+        margin: 1em;
+    }
+    
+    
+    #contact p{
+        font-size: 2em;
+        margin-top: 2em;
+        padding:0;
+        padding-bottom:20em; 
+        text-align: center;
+    }
+
+}/* end of mobile settings */
